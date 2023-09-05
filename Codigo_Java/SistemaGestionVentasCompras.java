@@ -9,6 +9,7 @@ public class SistemaGestionVentasCompras {
         SistemaVentaService sistemaVenta = new SistemaVentaService();
         Compras compras = new Compras();
         Cobros cobros = new Cobros();
+        sistemaPagos sistemaPagos = new sistemaPagos();
         int opcion = 0;
 
         while (opcion != 5) {
@@ -31,6 +32,9 @@ public class SistemaGestionVentasCompras {
                     break;
                 case 3:
                     cobros.mostrarMenu();
+                    break;
+                case 4: 
+                    sistemaPagos.menuGestionPagos();
                     break;
                 case 5:
                     System.out.println("Saliendo del Sistema...\nHasta la próxima!!!!");
